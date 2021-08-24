@@ -52,7 +52,7 @@
       write (*,*) '**************************'
       write (*,*) '*   SSC Tornado Code for *'
       write (*,*) '*       HAZ 45.2 or 3    *'
-      write (*,*) '*       Feb 2018         *'
+      write (*,*) '*       July 2021         *'
       write (*,*) '* Reduced Memory version *'
       write (*,*) '**************************'
 
@@ -61,8 +61,8 @@ c     Open and read the run file
       read (*,'(a80)') filein
       open (31,file=filein,status='old')
       read (31,*,err=2002) nPer
-      read (31,*,err=2003) HazLevel
-      read (31,*,err=2011) contrib_min
+      read (31,*,err=2003) contrib_min
+      read (31,*,err=2011) HazLevel
       
 c     Read correlated nodes from the input file
       read (31,*,err=2004) nCorr1
